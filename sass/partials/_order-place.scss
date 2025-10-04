@@ -1,0 +1,57 @@
+.orderPlace {
+	width:100%;
+	background: url('../images/img-slider-receips-color.png');
+	height: 300px;
+	margin:45px 0;
+@media (min-width: 1024px) and (max-width: 1279px) {
+	width: 100%;
+}	
+.layout {
+	width:100%;
+	background:#111111;	
+	opacity:0.6;
+	height:100%;
+	z-index: 1;
+@media (min-width: 1024px) and (max-width: 1279px) {
+	min-width: 1024px;
+}	
+h3 {
+	@include h3-text;
+	color:#babcbc;
+	font-weight: 400;
+	padding: 116px 0 56px 0;
+	z-index: 9999;
+	position: relative;
+@media (min-width: 667px) and (max-width: 1279px) {
+	font-size: 1.3em;
+}
+@media (min-width: 320px) and (max-width: 479px) {
+	font-size: 1.3em;
+}	
+@media (min-width: 480px) and (max-width: 666px) {
+	font-size: 1em;
+}		
+	&:after {
+		@include under_line;
+		top:80%;
+		background:#babcbc;
+		
+	}	
+}	
+.socials_two {
+	display:flex;
+	justify-content: center;
+li {
+a {
+	display:block;
+	padding:0 14px;
+	background:#111111;	
+	opacity:0.8;
+	&:hover {
+		opacity:1;
+	}
+}	
+}	
+}
+}
+}

@@ -1,0 +1,66 @@
+.menu {
+	@include big-block;
+	margin-bottom: 30px;
+@media (min-width: 1024px) and (max-width: 1279px) {
+	width: 100%;
+}	
+.layout {
+	width:1100px;
+	margin:0 auto;
+@media (min-width: 1024px) and (max-width: 1279px) {
+	width: 980px;
+}
+@media (min-width: 896px) and (max-width: 1023px) {
+	width: 860px;
+}
+@media (min-width: 768px) and (max-width: 895px){
+	width: 740px;
+}
+@media (min-width: 667px) and (max-width: 767px){
+	width: 630px;
+}
+@media (min-width: 480px) and (max-width: 666px) {
+	width: 480px;
+}
+@media (min-width: 320px) and (max-width: 479px) {
+	width: 320px;
+}			
+h3 {
+	@include h3-text;
+	margin-bottom:50px;
+	&:after {
+		@include under_line;
+		background:$main-color;
+		top:35px;
+	@media (min-width: 667px) and (max-width: 767px){
+		top:45px;
+	}	
+	}
+	@media (min-width: 667px) and (max-width: 767px){
+		font-size: 2em;
+	}
+}	
+.menu_list {
+	width:100%;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	margin-top:50px;
+li {
+	width:25%;
+	padding: 15px;
+@media (min-width: 768px) and (max-width: 1023px) {
+	width: 45%;
+	padding: 15px 10px;
+}
+@media (min-width: 320px) and (max-width: 767px){
+	width: 100%;
+	text-align: center;
+}	
+img {
+	width:auto;
+}	
+}	
+}	
+}	
+}

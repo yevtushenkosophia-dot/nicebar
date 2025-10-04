@@ -1,0 +1,104 @@
+.followers {
+	@include big-block;
+	margin-top:30px;
+	height: 300px;
+	margin-bottom:45px;
+	background: url('../images/followers_imag_1.png')no-repeat;
+@media (min-width: 1024px) and (max-width: 1279px) {
+	width: 100%;
+}	
+@media (min-width: 667px) and (max-width: 767px){
+	height: 250px;
+}
+@media (min-width: 320px) and (max-width: 666px) {
+	height: 200px;
+}
+.layout {
+	width: 1110px;
+	margin:0 auto;
+	height: auto;
+@media (min-width: 1024px) and (max-width: 1279px) {
+	width: 980px;
+}
+@media (min-width: 896px) and (max-width: 1023px) {
+	width: 860px;
+}	
+@media (min-width: 768px) and (max-width: 895px){
+	width: 740px;
+}
+@media (min-width: 667px) and (max-width: 767px){
+	width: 630px;
+}
+@media (min-width: 480px) and (max-width: 666px) {
+	width: 450px;
+}
+@media (min-width: 320px) and (max-width: 479px) {
+	width: 320px;
+}		
+.listFollowers {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+li {
+	width: 350px;
+	height: 300px;
+	background-color: #f69679;
+@media (min-width: 1024px) and (max-width: 1279px) {
+	width: 310px;
+}
+@media (min-width: 667px) and (max-width: 767px){
+	height: 250px;
+}
+@media (min-width: 320px) and (max-width: 666px) {
+	height: 200px;
+}	
+@media (min-width: 320px) and (max-width: 1023px) {
+	width: 32%;
+}		
+.followersContent{
+    display: block;
+    width: 45.7%;
+    margin:0 auto;
+@media (min-width: 667px) and (max-width: 1023px) {
+	width: 60%;
+}
+@media (min-width: 320px) and (max-width: 479px) {
+	width: 70%;
+}	
+a {
+	display: block;
+	padding:68px 0 10px 0;
+	text-align: center;
+@media (min-width: 667px) and (max-width: 666px) {
+	padding:20px 0 10px 0;
+}
+@media (min-width: 480px) and (max-width: 666px) {
+	display: flex;
+	justify-content: center;
+}	
+img {
+}	
+}
+h3{
+	@include FollowersText;
+@media (min-width: 667px) and (max-width: 767px){
+	font-size: 1.3em;
+}
+@media (min-width: 320px) and (max-width: 666px) {
+	display: none;
+}	
+}
+p {
+	@include FollowersText;
+@media (min-width: 667px) and (max-width: 767px){
+	font-size: 1.3em;
+}
+@media (min-width: 320px) and (max-width: 666px) {
+	display: none;
+}	
+}
+}	
+}	
+}		
+}	
+}	

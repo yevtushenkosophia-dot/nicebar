@@ -1,0 +1,43 @@
+@mixin big-block {
+	display: block;
+	position: relative;
+	width: 100%;
+}
+@mixin text-about {
+	font-size: 1.12em;
+	font-family: $font-family-main;
+}
+
+@mixin under_line {
+	content:'';
+	position: absolute;
+	height:4px;
+	width:100px;
+	left: 50%;
+	margin-left:-50px;
+}
+@mixin h3-text {
+	font-family: $font-family-main;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	color:#333333;
+	font-size: 1.75em;
+	position: relative;
+}
+@mixin GoodFoodText {
+	font-family: $font-family-main;
+	font-size: 1.12em;
+	color:#333333;
+	overflow: hidden;
+}
+@mixin FollowersText {
+	display: block;
+	font-family: $font-family-main;
+	font-weight: bold;
+	font-size: 1.56em;
+	text-transform: uppercase;
+	color:#ffffff;
+	padding:10px 0 10px 0;
+	text-align: center;
+}

@@ -1,0 +1,226 @@
+header {
+	@include big-block;
+	&:after{
+		content: '';
+		position: absolute;
+		top:40px;
+		width:100%;
+		height: 1px;
+		background:#dad5d5;
+		overflow:hidden;
+	}
+@media (min-width: 1024px) and (max-width: 1279px) {
+	width: 100%;
+}	
+.layout {
+	width:1180px;
+	height: 120px;
+	position: relative;
+@media (min-width: 1024px) and (max-width: 1279px) {
+	width: 980px;
+}
+@media (min-width: 896px) and (max-width: 1023px) {
+	width: 860px;
+	height: auto;
+}
+@media (min-width: 768px) and (max-width: 895px) {
+	width: 740px;
+	height: auto;
+}
+@media (min-width: 667px) and (max-width: 767px) {
+    width: 630px;
+    height: auto;
+}
+@media (min-width: 480px) and (max-width: 666px) {
+	width: 450px;
+	height: auto;
+}
+@media (min-width: 320px) and (max-width: 479px) {
+    width: 100%;
+    height: auto;
+}	
+.socials {
+	display:flex;
+	justify-content: flex-end;
+	width:100%;
+	position: relative;
+	max-width: 1078px;
+@media (min-width: 1024px) and (max-width: 1279px) {
+	width: 920px;
+}
+@media (min-width: 896px) and (max-width: 1023px) {
+	width: 800px;
+}
+@media (min-width: 768px) and (max-width: 895px){
+	width: 740px;
+	justify-content: center;
+}
+@media (min-width: 320px) and (max-width: 767px){
+	justify-content: flex-start;
+	width: 50%;
+}	
+a {
+	display:inline-block;
+	padding:12px;
+@media (min-width: 768px) and (max-width: 895px){
+	padding:12px 20px;
+}	
+img{
+	width:auto;
+}	
+}	
+}
+#logo {
+	float:left;
+	width:19%;
+    padding:17px 0;
+	overflow: hidden;
+@media (min-width: 667px) and (max-width: 1023px) {
+	float:none;
+	width: 100%;
+	text-align: center;
+	padding: 24px 0;
+}
+@media (min-width: 480px) and (max-width: 666px) {
+	display: none;
+}	
+a{
+	display:block;
+}	
+}
+nav {
+	float:right;
+@media (min-width: 768px) and (max-width: 1023px) {
+	float:none;
+	width: 100%;
+}	
+#main-menu {
+	width:100%;
+	overflow: hidden;
+@media (min-width: 768px) and (max-width: 1023px) {
+	text-align: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+	position: fixed;
+    top:0;
+    overflow: auto;
+    transition: .25s;
+    z-index: 10;
+    display:none;
+    &.menu-show {
+    	margin-top:0;
+        display:block;
+        top:0;
+        right:0;
+        height: 100%;
+        width:50%;
+        background:#111111;
+        text-align: center;
+        padding:40px 0;
+    @media (min-width: 320px) and (max-width: 479px) {
+    	width: 60%;
+    }    
+    }
+}	
+li {
+	display:inline-block;
+@media (min-width: 320px) and (max-width: 767px){
+	display: block;
+}
+@media (min-width: 320px) and (max-width: 479px) {
+	width: 25%;
+}	
+a {
+	padding:16px 24px;
+	color:#282930;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 1.12em;
+    margin: 0;
+    letter-spacing: 0;
+    position: relative;
+    width: 100%;
+    display: block;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease; 
+@media (min-width: 896px) and (max-width: 1023px) {
+	font-size: 1.3em;
+} 
+@media (min-width: 320px) and (max-width: 767px){
+	color:#ffffff;
+}
+@media (min-width: 480px) and (max-width: 666px) {
+	width: 50%;
+}     
+	&:last-child {
+		padding-right:0;
+	@media (min-width: 896px) and (max-width: 1023px) {
+		padding-right: 24px;
+	}	
+	}
+	&:hover{
+		letter-spacing: 4px;
+	}
+	&:active{
+		letter-spacing: 4px;
+	}
+	&:after{
+		backface-visibility: hidden;
+        border: 1px solid rgba(#282930, 0);
+        bottom: 1px;
+        content: " ";
+        display: block;
+        position: relative;
+        transition: all 380ms ease-in-out;
+        width: 0;        
+	}
+	&:before{
+		backface-visibility: hidden;
+        border: 1px solid rgba(#282930, 0);
+        bottom: 0px;
+        content: " ";
+        display: block;
+        position: relative;
+        transition: all 380ms ease-in-out;
+        width: 0;        
+	}
+	&:hover{
+		&:after{
+			backface-visibility: hidden;
+            border-color: #282930;
+            transition: width 380ms ease-in-out;
+            width: 80%; 
+        @media (min-width: 768px) and (max-width: 1023px){
+        	width: 90%;
+        }      
+        @media (min-width: 320px) and (max-width: 767px){
+    	    width: 0;
+    }     
+	}	
+	}
+	&:hover{	
+		&:before{
+			backface-visibility: hidden;
+            border-color: #282930;
+            transition: width 380ms ease-in-out;
+            width: 80%;
+            bottom: auto;
+            top: 0;
+        @media (min-width: 768px) and (max-width: 1023px){
+        	width: 90%;
+        }    
+        @media (min-width: 320px) and (max-width: 767px){
+    	    width: 0;
+    }    
+  	}	
+	}
+}
+}	
+}	
+}	
+}	
+}
+
+
